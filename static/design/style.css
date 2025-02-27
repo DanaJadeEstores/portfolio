@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: bisque;
+}
+h1{
+    text-align: center;
+}
+.about{
+    display: flex;
+}
+p{
+    font-weight: bold;
+    margin-top: 7%;
+    margin-left: 4%;
+    margin-right: 10%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b863df;
+    padding: 25px 30px;
+}
+.gif{
+    height: 50%;
+    width: 50%;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: rgb(241, 50, 50);
+}
+.container {
+    margin-top: 50px;
+    margin-left: 10%;
+    padding: 30px;  
+    display: inline-block;
+}
+.image {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 3px solid #333;
+    margin-top: 15px;
+}
+.container a {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.container a:hover {
+    background-color: #b863df;
+}
+.portfolio {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.portfolio:hover{
+    transform: scale(1.05);
+}
+.portfolio h2 {
+    margin-bottom: 10px;
+    color: #222;
+}
+.row{
+    display: inline-block;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.project1{
+    display: grid;
+    text-align: center;
+    font-size: large;
+}
+.pic{
+    width: 90%;
+    height: auto;
+    margin-left: 5%; 
+    border-radius: 20px;
+    border: 2px solid #b863df;   
+
+}
+.back{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+}
+.back:hover{
+    color: red;
+}
+h2{
+    text-align: center;
+}
+.skill-container{
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}   
+.skills {
+    width: fill;
+    margin: 20px auto;
+}
+.skill {
+    margin-bottom: 10px;
+}
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.skill-bar {
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.skill-fill {
+    height: 100%;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+}
+.html { background-color: #4CAF50; width: 50%; }
+.css { background-color: #2196F3; width: 20%; }
+.django { background-color: #FF9800; width: 10%; }
+
+@media (min-width: 768px) {
+    .about {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .about p {
+        max-width: 600px;
+        margin-left: 30px;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+    .gif {
+        max-width: 300px;
+    }
+}
